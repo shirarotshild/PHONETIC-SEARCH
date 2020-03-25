@@ -7,7 +7,7 @@ namespace phonetic{
 	int ans;
 	int l = text.length();
 	string tempWord;
-	if(l=0 || text.length() ){
+	if(l=0 || word.length() ==0){
 		throw std::out_of_range("The textis empty");
 	}
 	

@@ -7,9 +7,10 @@ namespace phonetic{
 	int ans;
 	int l = text.length();
 	string tempWord;
-	if(l=0 || word.length() ==0){
+	cout <<l <<endl;
+	if(l==0 || word.length() == 0){
 		throw std::out_of_range("The textis empty");
-	}
+		}
 	
     for (int i = 0; i < l; i++) { 
 	if(text.at(i) == ' ' || i == l-1){

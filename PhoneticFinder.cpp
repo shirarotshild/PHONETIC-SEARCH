@@ -4,10 +4,12 @@ using namespace std;
 
 namespace phonetic{
   string find(string text, string word){
-	 
 	int ans;
 	int l = text.length();
 	string tempWord;
+	if(l=0 || text.length() ){
+		throw std::out_of_range("The textis empty");
+	}
 	
     for (int i = 0; i < l; i++) { 
 	if(text.at(i) == ' ' || i == l-1){

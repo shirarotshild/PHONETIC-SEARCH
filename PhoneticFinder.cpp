@@ -21,7 +21,7 @@ namespace phonetic{
 	  if(ans ==0){
 	  return tempWord;
 	 }
-	 else if(i== l-1 && ans !=1){
+	 else if(i== l-1 && ans ==1){
 		throw std::out_of_range("The word not in the text");
 	 }
 	 else{
